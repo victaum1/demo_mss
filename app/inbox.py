@@ -21,7 +21,7 @@ def show():
         ""
     ).fetchall()
 
-    return render_template('inbox/send.html', messages=messages)
+    return render_template('inbox/show.html', messages=messages)
 
 
 @bp.route('/send', methods=('GET', 'POST'))
